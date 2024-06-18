@@ -1,0 +1,86 @@
+/* Write your CSS code here */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 15px;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 29px;
+  text-align: center;
+  margin-top: 0px;
+  font-weight: bold;
+  color: #1e293b;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clothes {
+  width: 50%;
+  border-radius: 5px;
+}
+.paragraph {
+  color: #64748b;
+  font-family: 'Roboto';
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.shopnow {
+  background-color: #0967d2;
+  color: #e2e8f0;
+  padding: 8px 16px 8px 16px;
+  border: none;
+  outline: none;
+  width: 40%;
+  cursor: pointer;
+  margin-bottom: 14px;
+  border-radius: 8px;
+}
+.medium-size-image {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .clothes {
+    display: none;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin-top: 70px;
+  }
+  .heading {
+    text-align: left;
+    font-size: 50px;
+  }
+  .paragraph {
+    font-size: 22px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .shopnow {
+    padding: 14px 48px 14px 48px;
+    width: 40%;
+    margin-left: 20px;
+    font-size: 22px;
+  }
+  .medium-size-image {
+    display: block;
+    width: 50%;
+    margin-top: 70px;
+    height: 50%;
+  }
+}

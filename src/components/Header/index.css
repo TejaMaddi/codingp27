@@ -1,0 +1,72 @@
+/* Write your CSS code here */
+.nav-bar {
+  padding: 15px;
+}
+.medium-container {
+  display: none;
+}
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  height: 25px;
+  width: 100px;
+}
+.nav-logout {
+  height: 20px;
+  width: 20px;
+}
+.logout-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.bottom-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  background-color: #e6f6ff;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .logout-button {
+    display: none;
+  }
+  .nav-logo {
+    height: 50px;
+    width: 200px;
+  }
+  .medium-container {
+    display: block;
+  }
+  .medium-size {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  .list1 {
+    color: #64748b;
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 15px;
+  }
+  .logout-medium-button {
+    margin-left: 15px;
+    background-color: #0967d2;
+    padding: 10px 16px 10px 16px;
+    color: #ffffff;
+    font-family: 'Roboto';
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+  }
+  .bottom-container {
+    display: none;
+  }
+}

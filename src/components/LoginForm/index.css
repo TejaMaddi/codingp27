@@ -1,0 +1,98 @@
+/* Write your CSS code here */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  min-height: 100vh;
+}
+.logo {
+  width: 50%;
+  margin-bottom: 29px;
+  max-width: 400px;
+}
+.logo-medium {
+  display: none;
+}
+.login {
+  max-width: 400px;
+  width: 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+}
+.label {
+  color: #475569;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.input-element {
+  background-color: #e2e8f0;
+  padding: 8px 16px 8px 16px;
+  font-size: 14px;
+  font-family: 'Roboto';
+  height: 40px;
+  border: 1px solid #d7dfe9;
+  color: #64748b;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+.login-button {
+  background-color: #0b69ff;
+  color: #ffffff;
+  font-family: 'Roboto';
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  margin-top: 14px;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.error-message {
+  font-family: 'Roboto';
+  color: #ff0b37;
+  font-size: 12px;
+  align-self: start;
+  margin-top: px;
+  margin-bottom: 0px;
+  line-height: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  .logo {
+    display: none;
+  }
+  .medium-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-medium {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .login {
+    max-width: 550px;
+  }
+  .form {
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    padding: 40px;
+    margin-left: 40px;
+    height: 400px;
+    max-width: 450px;
+    justify-content: center;
+  }
+}
